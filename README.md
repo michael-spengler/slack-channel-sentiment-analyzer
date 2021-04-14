@@ -1,0 +1,1 @@
+# slack-channel-sentiment-analyzer
