@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block body %}
+  <main class="fd-page">
+    <div class="fd-page__content" role="region">
+      <div>
+        <table class="fd-table">
+          <thead class="fd-table__header">
+            <tr class="fd-table__row">
+              <!-- <th class="fd-table__cell" scope="col">Message Type</th> -->
+              <!-- <th class="fd-table__cell" scope="col">Message Subtype</th> -->
+              <th class="fd-table__cell" scope="col">Message</th>
+              <th class="fd-table__cell" scope="col">Sentiment</th>
+            </tr>
+          </thead>
+          <tbody class="fd-table__body">
+            {% for message in messages %}
+              <tr class="fd-table__row">
+                <!-- <td>{{message.type}}</td> -->
+                <!-- <td>{{message.subtype}}</td> -->
+                <td class="fd-table__cell">{{message.text}}</td>
+                <td class="fd-table__cell">{{message.sentiment}}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+{% endblock %}
+
