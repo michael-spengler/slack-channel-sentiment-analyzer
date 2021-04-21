@@ -19,21 +19,20 @@ uvicorn main:app
 
 
 ## How it Works
-We created a Slack App called [Sentiment Analyzer](https://api.slack.com/apps/A01UWSD1YMT) which has the corresponding read messages permissions - see scopes file in assets folder.
+We created a Slack App called [Sentiment Analyzer](https://api.slack.com/apps/A01UWSD1YMT) which has the corresponding read messages of public channels permissions - see scopes file in assets folder.
 
-We added this Slack in all channels for which we would like to conduct the sentiment analysis via a slash command ("/invite") - see also screenshot in assets folder.
+We added this Slack App (via a slash command ("/invite")) in all channels for which we would like to conduct the sentiment analysis - see also screenshot in assets folder.
 
-Take the token from OAUTH Tokens for your Workspace
+We took the token from "OAUTH Tokens for your Workspace".  
 
-Check the message retrieval via slack_client.py
+... Raise an issue in case of questions.
+... Raise a PR in case of improvement proposals.
 
-
-
-
-## Retrieving Messages incl. Thread Messages
+## Background Info
+### Retrieving Messages incl. Thread Messages
 https://api.slack.com/messaging/retrieving
 
-## Potentially Helpful Links
+### Potentially Helpful Links
 1. https://huggingface.co/transformers/model_doc/gpt.html  
 2. https://huggingface.co/nlptown/bert-base-multilingual-uncased-sentiment 
 3. https://huggingface.co/transformers/quicktour.html
