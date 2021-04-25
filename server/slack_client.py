@@ -1,5 +1,8 @@
 import os
 from slack_sdk.web import WebClient
+from dotenv import load_dotenv
+
+load_dotenv()
 
 slack_web_client = WebClient(token=os.environ['SLACK_BOT_TOKEN'])
 
