@@ -10,8 +10,9 @@ brew install python3
 pip3 install -r requirements.txt
 ```
 
+Create a `.env` file inside the `server` folder using the template file `.env.template`. Add all the required environment variables to the file (e.g. Slack bot token).
+
 ```sh
-export SLACK_BOT_TOKEN=your-token
 cd server  
 uvicorn main:app --reload
 ```
