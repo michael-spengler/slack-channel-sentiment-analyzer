@@ -13,5 +13,4 @@ def get_sentiment(statement):
 
   # The compound value reflects the overall sentiment
   # ranging from -1 being very negative and +1 being very positive.
-  print(statement, scores)
   return scores['compound']

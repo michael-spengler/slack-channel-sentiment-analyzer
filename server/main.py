@@ -20,7 +20,7 @@ async def home_page(request: Request):
   channels = get_channels()
   return templates.TemplateResponse("index.html", {"request": request, "channels": channels})
 
-@app.get("/{slack_channel_id}", response_class=HTMLResponse)
+@app.get("/channel/{slack_channel_id}", response_class=HTMLResponse)
 async def channel_page(request: Request, slack_channel_id: str):
   messages = get_messages(slack_channel_id)
   summary = 0

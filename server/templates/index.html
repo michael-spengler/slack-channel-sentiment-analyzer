@@ -2,6 +2,6 @@
 {% block body %}
   <h1 class="fd-title fd-title--h1">Slack channels found</h1>
   {% for channel in channels %}
-    <a href="{{channel.id}}">{{channel.name}}</a><br/>
+    <a href="channel/{{channel.id}}">{{channel.name}}</a><br/>
   {% endfor %}
 {% endblock %}
