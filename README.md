@@ -13,7 +13,7 @@ pip3 install -r requirements.txt
 ```sh
 export SLACK_BOT_TOKEN=your-token
 cd server  
-uvicorn main:app
+uvicorn main:app --reload
 ```
 
 
